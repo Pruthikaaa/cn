@@ -1,0 +1,57 @@
+ns2
+
+sudo atp update
+sudo apt upgrade
+
+sudo apt install build essential autoconfig automake libxmu-dev
+
+wget https://sorceforge.net/...
+
+xvzf ns-allinone -2.35.tar.gz
+
+cd ns-allinone 2.35
+
+./install
+
+nano ~/bashrc
+
+source ~/bashrc
+
+
+ns3
+
+
+sudo atp update
+sudo apt upgrade
+
+sudo apt install -y build-essential g++ python3 cmake git qt5-default
+
+git clone https://gitlab.com/ns-nam/....git
+cd ns-3-dev
+
+./ns3 configure --enable-examples --enablre-tests
+./ns3 build
+
+./ns3 run hello-simulator
+
+
+prog
+
+nano hello.tcl
+
+# Create a simulator object
+set ns [new Simulator]
+
+# Display simple message
+puts "Hello NS2 Simulation!"
+
+# Finish simulation
+$ns run
+
+✔ Save → Press CTRL+O → ENTER
+✔ Exit → Press CTRL+X
+
+ns hello.tcl
+
+
+ 
